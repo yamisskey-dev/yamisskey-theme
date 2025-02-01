@@ -1,113 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap');
 
 /* 全体のフォント設定 */
 html {
-    font-family: 'Noto Sans JP', sans-serif !important;
-}
-
-/* ノート入力ポップアップ */
-.xpDI4.xxtDg._popup {
-    width: 360px;
-    height: 480px;
-    top: calc(50% - 240px);
-    max-width: initial;
-    overflow: auto;
-}
-.xpDI4.xxtDg._popup .x8B0D {
-    height: 200px;
-}
-.xpDI4.xxtDg._popup .xoGjR {
-    height: 200px;
-    overflow: auto;
+    font-family: 'Zen Maru Gothic', sans-serif !important;
 }
 
 /* 公開範囲による背景色の変更 */
 .xcSej.x3762:has(.ti-rocket-off) {
-    background-color: rgba(255, 50, 50, 0.1) !important; /* 連合オフ */
+    background-color: rgba(255, 102, 181, 0.1) !important; /* 連合オフ - errorカラーベース */
 }
 .xcSej.x3762:has(.ti-home) {
-    background-color: rgba(50, 255, 50, 0.1) !important; /* ホーム */
+    background-color: rgba(112, 102, 255, 0.1) !important; /* ホーム - accentカラーベース */
 }
 .xcSej.x3762:has(.ti-mail) {
-    background-color: rgba(50, 50, 255, 0.1) !important; /* ダイレクトメッセージ */
+    background-color: rgba(101, 87, 208, 0.1) !important; /* DM - linkカラーベース */
 }
 .xcSej.x3762:has(.ti-lock) {
-    background-color: rgba(200, 50, 200, 0.1) !important; /* フォロワー限定 */
-}
-
-/* 絵文字設定 */
-:root {
-    --emoji_default_size: 28px;
-    --emoji_margin_lr: 4px;
-    --emoji_margin_tb: 2px;
-    --emoji_max_size: 60px;
-    --emoji_displey_style: contain;
-    --emoji_window_default_height: 380px;
-    --emoji_window_default_width: 380px;
-    --emoji_autofill_max_width: 280px;
-    --emoji_autofill_displey_style: contain;
-}
-
-/* 絵文字ピッカーウィンドウ全体のスタイル */
-.emojis {
-    width: var(--emoji_window_default_width) !important;
-    height: var(--emoji_window_default_height) !important;
-    padding: 8px 4px 4px;
-    text-align: center;
-    overflow-y: auto; /* 縦スクロールを可能にする */
-    overflow-x: auto; /* 横スクロールを防ぐ */
-}
-.emojis section>.body {
-    display: inline !important;
-    padding: 0 !important;
-    line-height: 0;
-}
-.emojis section>.body .item {
-    height: auto !important;
-}
-button:has(.emoji) {
-    aspect-ratio: auto!important;
-    width: fit-content !important;
-    contain: layout !important;
-    margin: 0px !important;
-    padding: var(--emoji_margin_tb) var(--emoji_margin_lr) !important;
-    min-height: var(--emoji_default_size) !important;
-}
-button:has(.emoji) img {
-    width: auto !important;
-    height: var(--emoji_default_size) !important;
-    object-fit: var(--emoji_displey_style) !important;
-    object-position: 0% 50%;
-    max-width: var(--emoji_max_size);
-}
-.xeJ4G.xuoKL, ._emoji_1pjrm_56 {
-    width: auto !important;
-    object-fit: var(--emoji_autofill_displey_style) !important;
-    object-position: 0% 50%;
-    max-width: var(--emoji_autofill_max_width);
-}
-
-/* ノートのコンパクト化 */
-.xf8ll {
-    display: none !important;
-}
-.xBwhh {
-    padding: 4px 32px 0px !important;
-    margin-left: 72px !important;
-    margin-bottom: -0.9em !important;
-}
-.x5yeR {
-    padding: 10px 30px 6px !important;
-}
-.xDpSv {
-    line-height: 1.4em !important;
-}
-.xDRXD {
-    height: 1.4em !important;
-}
-.xviCy {
-    padding: 0px 8px 4px !important;
-}
-.xhAPG {
-    margin-bottom: -2px !important;
+    background-color: rgba(207, 134, 255, 0.1) !important; /* フォロワー限定 - buttonGradateAベース */
 }
