@@ -29,7 +29,7 @@
     "focus": ":alpha<0.4<@accent",
     "navBg": "rgba(255, 252, 252, 0.98)",
     "navFg": "@fg",
-    "panel": "rgba(255, 252, 252, 0.95)",
+    "panel": "rgba(255, 252, 252, 0.82)",
     "popup": "rgba(255, 252, 253, 0.99)",
     "accent": "#6557D0",
     "deckBg": "rgba(250, 252, 255, 0.35)",
