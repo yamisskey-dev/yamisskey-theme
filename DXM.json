@@ -41,7 +41,7 @@
     "divider": "rgba(134, 113, 235, 0.18)",
     "hashtag": "#8671EB",
     "mention": "#9F32A2",
-    "modalBg": "rgba(0, 0, 0, 0.75)",
+    "modalBg": "rgba(0, 0, 0, 0.9)",
     "success": "rgba(255, 102, 181, 0.9)",
     "buttonBg": "rgba(134, 113, 235, 0.15)",
     "switchBg": "rgba(134, 113, 235, 0.18)",
