@@ -69,7 +69,7 @@
     "accentDarken": ":darken<5<@accent",
     "acrylicPanel": ":alpha<0.48<@panel",
     "navIndicator": "@indicator",
-    "windowHeader": ":alpha<0.62<@panel",
+    "windowHeader": "rgba(185, 54, 185, 0.55)",
     "accentLighten": ":lighten<12<@accent",
     "buttonHoverBg": "rgba(134, 113, 235, 0.25)",
     "driveFolderBg": ":alpha<0.2<@accent",
