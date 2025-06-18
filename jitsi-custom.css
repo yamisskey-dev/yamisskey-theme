@@ -1,0 +1,116 @@
+/*
+ * Yamisskey Theme - Additional CSS
+ * Loaded AFTER the main Jitsi CSS to override colors only
+ */
+
+/* === VARIABLES OVERRIDE === */
+/* Since we can't compile SCSS, define colors as CSS custom properties */
+:root {
+    --yamisskey-primary: #966BFF;
+    --yamisskey-secondary: #B32DB6;
+    --yamisskey-bg: rgba(19, 14, 38, 0.94);
+    --yamisskey-panel: rgba(22, 16, 44, 0.85);
+    --yamisskey-nav: rgba(23, 15, 42, 0.92);
+    --yamisskey-text: #B4BDD0;
+    --yamisskey-border: rgba(134, 113, 235, 0.25);
+}
+
+/* === BACKGROUND COLORS === */
+body,
+#videoconference_page,
+#welcome_page,
+.app {
+    background: var(--yamisskey-bg) !important;
+    color: var(--yamisskey-text) !important;
+}
+
+/* === TOOLBAR COLORS === */
+/* Override the SCSS variables with actual CSS */
+.new-toolbox,
+.toolbox-content-wrapper {
+    background: var(--yamisskey-nav) !important;
+}
+
+.always-on-top-toolbox {
+    background-color: var(--yamisskey-nav) !important;
+}
+
+/* === CHAT COLORS === */
+.chat-panel,
+.side-panel,
+#chatconversation {
+    background: var(--yamisskey-panel) !important;
+    color: var(--yamisskey-text) !important;
+}
+
+.chat-dialog {
+    background: var(--yamisskey-panel) !important;
+}
+
+/* === BUTTON COLORS === */
+.welcome .enter-room button,
+.welcome-page-button,
+button {
+    background: var(--yamisskey-primary) !important;
+    color: #FFFFFF !important;
+}
+
+.welcome .enter-room button:hover,
+.welcome-page-button:hover,
+button:hover {
+    background: var(--yamisskey-secondary) !important;
+}
+
+/* === TOOLBAR BUTTON COLORS === */
+.toolbox-button,
+.toolbox-icon {
+    background: rgba(134, 113, 235, 0.2) !important;
+    color: var(--yamisskey-text) !important;
+    border-color: var(--yamisskey-border) !important;
+}
+
+.toolbox-button:hover,
+.toolbox-icon:hover {
+    background: rgba(134, 113, 235, 0.4) !important;
+    border-color: var(--yamisskey-primary) !important;
+}
+
+.toolbox-button.toggled,
+.toolbox-icon.toggled {
+    background: var(--yamisskey-primary) !important;
+    color: #FFFFFF !important;
+}
+
+/* === TEXT COLORS === */
+.welcome .header .header-text,
+.welcome .header h1,
+.app-name,
+.application-name {
+    color: #FFFFFF !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* === INPUT COLORS === */
+input, textarea, select {
+    background: var(--yamisskey-panel) !important;
+    border-color: var(--yamisskey-border) !important;
+    color: var(--yamisskey-text) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--yamisskey-primary) !important;
+    box-shadow: 0 0 0 2px rgba(150, 107, 255, 0.3) !important;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar-track {
+    background: var(--yamisskey-panel) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yamisskey-primary) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--yamisskey-secondary) !important;
+}
