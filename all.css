@@ -1,0 +1,159 @@
+/*
+ * Yamisskey Jitsi Theme
+ * Based on Official Jitsi Customization Guide + Misskey DXM Theme
+ */
+
+/* Import SCSS Variables as CSS Variables */
+:root {
+    --yamisskey-primary: #966BFF;
+    --yamisskey-secondary: #B32DB6;
+    --yamisskey-tertiary: #4B38A5;
+    --yamisskey-bg: rgba(19, 14, 38, 0.94);
+    --yamisskey-panel: rgba(22, 16, 44, 0.85);
+    --yamisskey-nav: rgba(23, 15, 42, 0.92);
+    --yamisskey-text: #B4BDD0;
+    --yamisskey-border: rgba(134, 113, 235, 0.25);
+}
+
+/* Global Background and Text (公式ドキュメント準拠) */
+html, body {
+    background: var(--yamisskey-bg) !important;
+    color: var(--yamisskey-text) !important;
+}
+
+/* Welcome Page Background (公式ドキュメント通り) */
+.welcome .header,
+#welcome_page .header,
+.welcome-page .header {
+    background: linear-gradient(135deg, rgba(179, 45, 182, 0.8), rgba(150, 107, 255, 0.8), rgba(75, 56, 165, 0.8)),
+                url('../images/wallpaper.jpg') center/cover !important;
+    background-blend-mode: overlay !important;
+    min-height: 100vh !important;
+}
+
+/* App Name Display (公式ドキュメント準拠) */
+.app-name,
+.application-name,
+.header-text,
+.welcome .header .header-text {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Logo Display (公式ドキュメント準拠) */
+.welcome .header .welcome-watermark,
+.header-logo,
+.logo {
+    background-image: url('../images/watermark.svg') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Brand Watermark Link */
+.brand-watermark {
+    cursor: pointer !important;
+}
+
+/* Page Background */
+body,
+body.welcome,
+#app,
+#welcome_page,
+#videoconference_page {
+    background: var(--yamisskey-bg) !important;
+    color: var(--yamisskey-text) !important;
+}
+
+/* Toolbar Styling */
+.toolbox-content-wrapper,
+.new-toolbox,
+.toolbox {
+    background: var(--yamisskey-nav) !important;
+    border-color: var(--yamisskey-border) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.toolbox-button,
+.toolbox-icon {
+    background: rgba(134, 113, 235, 0.2) !important;
+    color: var(--yamisskey-text) !important;
+    border: 1px solid var(--yamisskey-border) !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.toolbox-button:hover,
+.toolbox-icon:hover {
+    background: rgba(134, 113, 235, 0.4) !important;
+    border-color: var(--yamisskey-primary) !important;
+}
+
+.toolbox-button.toggled,
+.toolbox-icon.toggled {
+    background: var(--yamisskey-primary) !important;
+    color: #FFFFFF !important;
+}
+
+/* Side Panels */
+.side-panel,
+.chat-panel,
+.participants-panel {
+    background: var(--yamisskey-panel) !important;
+    border-color: var(--yamisskey-border) !important;
+    color: var(--yamisskey-text) !important;
+}
+
+/* Modal and Dialog */
+.modal,
+.dialog {
+    background: var(--yamisskey-panel) !important;
+    border: 1px solid var(--yamisskey-border) !important;
+    color: var(--yamisskey-text) !important;
+    border-radius: 12px !important;
+}
+
+/* Input Fields */
+input, textarea, select {
+    background: var(--yamisskey-panel) !important;
+    border: 1px solid var(--yamisskey-border) !important;
+    color: var(--yamisskey-text) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--yamisskey-primary) !important;
+    box-shadow: 0 0 0 2px rgba(150, 107, 255, 0.3) !important;
+}
+
+/* Buttons */
+.button, .btn {
+    background: linear-gradient(135deg, var(--yamisskey-secondary), var(--yamisskey-primary), var(--yamisskey-tertiary)) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    border-radius: 8px !important;
+}
+
+.button:hover, .btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(150, 107, 255, 0.4) !important;
+}
+
+/* Video Container */
+.videocontainer {
+    border: 1px solid var(--yamisskey-border) !important;
+    border-radius: 12px !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--yamisskey-panel) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yamisskey-primary) !important;
+    border-radius: 4px !important;
+}
