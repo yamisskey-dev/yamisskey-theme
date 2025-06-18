@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap');
+
+/* ベース設定 */
+html {
+    font-family: 'Zen Maru Gothic', sans-serif !important;
+}
+
+.xcSej.x3762 {
+    border-radius: 6.5px;
+    border: 1px solid rgba(190, 200, 255, 0.08);
+}
+
+/* 公開範囲表示 - 視認性と優しさのバランス */
+.xcSej.x3762:has(.ti-rocket-off) {
+    background-color: rgba(255, 182, 193, 0.15) !important;
+}
+
+.xcSej.x3762:has(.ti-home) {
+    background-color: rgba(176, 216, 235, 0.15) !important;
+}
+
+.xcSej.x3762:has(.ti-mail) {
+    background-color: rgba(190, 185, 225, 0.15) !important;
+}
+
+.xcSej.x3762:has(.ti-lock) {
+    background-color: rgba(210, 190, 255, 0.15) !important;
+}
