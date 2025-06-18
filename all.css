@@ -1,159 +1,131 @@
 /*
- * Yamisskey Jitsi Theme
- * Based on Official Jitsi Customization Guide + Misskey DXM Theme
+ * Yamisskey Jitsi Theme CSS
+ * Complements the SCSS variables
  */
 
-/* Import SCSS Variables as CSS Variables */
-:root {
-    --yamisskey-primary: #966BFF;
-    --yamisskey-secondary: #B32DB6;
-    --yamisskey-tertiary: #4B38A5;
-    --yamisskey-bg: rgba(19, 14, 38, 0.94);
-    --yamisskey-panel: rgba(22, 16, 44, 0.85);
-    --yamisskey-nav: rgba(23, 15, 42, 0.92);
-    --yamisskey-text: #B4BDD0;
-    --yamisskey-border: rgba(134, 113, 235, 0.25);
+/* Global Background Override */
+html,
+body {
+    background: rgba(19, 14, 38, 0.94) !important;
+    color: #B4BDD0 !important;
 }
 
-/* Global Background and Text (公式ドキュメント準拠) */
-html, body {
-    background: var(--yamisskey-bg) !important;
-    color: var(--yamisskey-text) !important;
-}
-
-/* Welcome Page Background (公式ドキュメント通り) */
-.welcome .header,
-#welcome_page .header,
-.welcome-page .header {
-    background: linear-gradient(135deg, rgba(179, 45, 182, 0.8), rgba(150, 107, 255, 0.8), rgba(75, 56, 165, 0.8)),
-                url('../images/wallpaper.jpg') center/cover !important;
-    background-blend-mode: overlay !important;
-    min-height: 100vh !important;
-}
-
-/* App Name Display (公式ドキュメント準拠) */
-.app-name,
-.application-name,
-.header-text,
-.welcome .header .header-text {
+/* Welcome Page Title Styling */
+.welcome .header .header-text,
+.welcome .header h1,
+.welcome-page-title {
     color: #FFFFFF !important;
+    font-size: 3rem !important;
     font-weight: 600 !important;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8) !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.2 !important;
 }
 
-/* Logo Display (公式ドキュメント準拠) */
-.welcome .header .welcome-watermark,
-.header-logo,
-.logo {
-    background-image: url('../images/watermark.svg') !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
+/* Welcome Page Subtitle */
+.welcome .header .subtitle,
+.welcome .header .description {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.2rem !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6) !important;
+    margin-top: 1rem !important;
 }
 
-/* Brand Watermark Link */
-.brand-watermark {
-    cursor: pointer !important;
-}
-
-/* Page Background */
-body,
-body.welcome,
-#app,
-#welcome_page,
-#videoconference_page {
-    background: var(--yamisskey-bg) !important;
-    color: var(--yamisskey-text) !important;
-}
-
-/* Toolbar Styling */
-.toolbox-content-wrapper,
-.new-toolbox,
-.toolbox {
-    background: var(--yamisskey-nav) !important;
-    border-color: var(--yamisskey-border) !important;
-    backdrop-filter: blur(10px) !important;
-}
-
-.toolbox-button,
-.toolbox-icon {
-    background: rgba(134, 113, 235, 0.2) !important;
-    color: var(--yamisskey-text) !important;
-    border: 1px solid var(--yamisskey-border) !important;
-    border-radius: 8px !important;
-    transition: all 0.3s ease !important;
-}
-
-.toolbox-button:hover,
-.toolbox-icon:hover {
-    background: rgba(134, 113, 235, 0.4) !important;
-    border-color: var(--yamisskey-primary) !important;
-}
-
-.toolbox-button.toggled,
-.toolbox-icon.toggled {
-    background: var(--yamisskey-primary) !important;
+/* App Name Display */
+.app-name,
+.application-name {
     color: #FFFFFF !important;
+    font-weight: 600 !important;
 }
 
-/* Side Panels */
-.side-panel,
-.chat-panel,
-.participants-panel {
-    background: var(--yamisskey-panel) !important;
-    border-color: var(--yamisskey-border) !important;
-    color: var(--yamisskey-text) !important;
-}
-
-/* Modal and Dialog */
-.modal,
-.dialog {
-    background: var(--yamisskey-panel) !important;
-    border: 1px solid var(--yamisskey-border) !important;
-    color: var(--yamisskey-text) !important;
-    border-radius: 12px !important;
-}
-
-/* Input Fields */
-input, textarea, select {
-    background: var(--yamisskey-panel) !important;
-    border: 1px solid var(--yamisskey-border) !important;
-    color: var(--yamisskey-text) !important;
-}
-
-input:focus, textarea:focus, select:focus {
-    border-color: var(--yamisskey-primary) !important;
-    box-shadow: 0 0 0 2px rgba(150, 107, 255, 0.3) !important;
-}
-
-/* Buttons */
-.button, .btn {
-    background: linear-gradient(135deg, var(--yamisskey-secondary), var(--yamisskey-primary), var(--yamisskey-tertiary)) !important;
+/* Button Styling to Match SCSS Variables */
+.welcome .enter-room button,
+.welcome-page button,
+.primary-button {
+    background: linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5) !important;
     border: none !important;
     color: #FFFFFF !important;
     border-radius: 8px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
 }
 
-.button:hover, .btn:hover {
+.welcome .enter-room button:hover,
+.welcome-page button:hover,
+.primary-button:hover {
+    background: linear-gradient(135deg, rgba(179, 45, 182, 0.9), rgba(150, 107, 255, 0.9), rgba(75, 56, 165, 0.9)) !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 4px 12px rgba(150, 107, 255, 0.4) !important;
 }
 
-/* Video Container */
-.videocontainer {
-    border: 1px solid var(--yamisskey-border) !important;
-    border-radius: 12px !important;
+/* Toolbar Styling */
+.new-toolbox,
+.toolbox-content-wrapper {
+    background: rgba(23, 15, 42, 0.92) !important;
+    backdrop-filter: blur(10px) !important;
 }
 
-/* Scrollbar */
+/* Chat Styling */
+.chat-panel,
+.side-panel {
+    background: rgba(22, 16, 44, 0.85) !important;
+    backdrop-filter: blur(15px) !important;
+}
+
+/* Input Fields */
+input,
+textarea,
+select {
+    background: rgba(22, 16, 44, 0.8) !important;
+    border: 1px solid rgba(134, 113, 235, 0.25) !important;
+    color: #B4BDD0 !important;
+    border-radius: 8px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #966BFF !important;
+    box-shadow: 0 0 0 2px rgba(150, 107, 255, 0.3) !important;
+}
+
+/* Video Container Border */
+.videocontainer {
+    border: 2px solid rgba(134, 113, 235, 0.25) !important;
+    border-radius: 8px !important;
+}
+
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 8px !important;
+    height: 8px !important;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--yamisskey-panel) !important;
+    background: rgba(22, 16, 44, 0.5) !important;
+    border-radius: 4px !important;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--yamisskey-primary) !important;
+    background: #966BFF !important;
     border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B32DB6 !important;
+}
+
+/* Additional Page Backgrounds */
+#videoconference_page,
+#welcome_page,
+.app {
+    background: rgba(19, 14, 38, 0.94) !important;
+}
+
+/* Logo Watermark Sizing */
+.welcome-watermark,
+.header-logo {
+    width: 120px !important;
+    height: 40px !important;
 }

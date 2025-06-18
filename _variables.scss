@@ -1,9 +1,190 @@
-$welcomePageHeaderBackground: linear-gradient(135deg, rgba(179, 45, 182, 0.8), rgba(150, 107, 255, 0.8), rgba(75, 56, 165, 0.8)), url('../images/welcome-background.png');
+/**
+ * Yamisskey Theme Variables
+ * Based on Official Jitsi Meet _variables.scss
+ * Misskey DXM Theme Colors Applied
+ */
 
-// YamiSskey Color Variables
-$primary-color: #966BFF;
-$secondary-color: #B32DB6;
-$background-color: rgba(19, 14, 38, 0.94);
-$panel-color: rgba(22, 16, 44, 0.85);
-$text-color: #B4BDD0;
-$border-color: rgba(134, 113, 235, 0.25);
+/**
+ * Style variables
+ */
+$baseFontFamily: -apple-system, BlinkMacSystemFont, 'open_sanslight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+/**
+ * Size variables.
+ */
+
+// Video layout.
+$thumbnailsBorder: 2px;
+
+/**
+ * Toolbar - Yamisskey Dark Theme
+ */
+$newToolbarBackgroundColor: rgba(23, 15, 42, 0.92); // yamisskey-nav
+$newToolbarSize: 48px;
+$newToolbarSizeMobile: 60px;
+$newToolbarSizeWithPadding: calc(#{$newToolbarSize} + 24px);
+
+/**
+ * Chat - Yamisskey Dark Theme
+ */
+$chatBackgroundColor: rgba(22, 16, 44, 0.85); // yamisskey-panel
+
+/**
+ * Misc.
+ */
+$borderRadius: 8px; // Yamisskey rounded corners
+$scrollHeight: 8px; // Slightly thicker for better visibility
+
+/**
+ * Z-indexes. TODO: Replace this by a function.
+ */
+$zindex0: 0;
+$zindex1: 1;
+$zindex2: 2;
+$zindex3: 3;
+$toolbarZ: 250;
+$watermarkZ: 253;
+
+// Place filmstrip videos over toolbar in order
+// to make connection info visible.
+$filmstripVideosZ: $toolbarZ + 1;
+
+/**
+ * Unsupported browser - Yamisskey Theme
+ */
+$primaryUnsupportedBrowserButtonBgColor: #966BFF; // yamisskey-primary
+$unsupportedBrowserButtonBgColor: rgba(134, 113, 235, 0.2);
+$unsupportedBrowserTextColor: #B4BDD0; // yamisskey-text
+$unsupportedBrowserTextSmallFontSize: 1rem;
+$unsupportedBrowserTitleColor: #fff;
+$unsupportedBrowserTitleFontSize: 1.5rem;
+$unsupportedDesktopBrowserTextColor: rgba(180, 189, 208, 0.7); // yamisskey-text with opacity
+$unsupportedDesktopBrowserTextFontSize: 1.25rem;
+
+/**
+ * The size of the default watermark.
+ */
+$watermarkWidth: 120px; // Larger for Yamisskey logo
+$watermarkHeight: 40px;
+
+$welcomePageWatermarkWidth: 120px;
+$welcomePageWatermarkHeight: 40px;
+
+/**
+ * Welcome page variables - Yamisskey Theme
+ */
+$welcomePageDescriptionColor: rgba(255, 255, 255, 0.9); // Slightly transparent white
+$welcomePageFontFamily: inherit;
+$welcomePageBackground: rgba(19, 14, 38, 0.94); // yamisskey-bg
+$welcomePageTitleColor: #fff;
+
+// Yamisskey Background with Gradient Overlay
+$welcomePageHeaderBackground: linear-gradient(135deg, rgba(179, 45, 182, 0.8), rgba(150, 107, 255, 0.8), rgba(75, 56, 165, 0.8)), url('../images/wallpaper.jpg');
+$welcomePageHeaderBackgroundPosition: center;
+$welcomePageHeaderBackgroundRepeat: no-repeat;
+$welcomePageHeaderBackgroundSize: cover;
+$welcomePageHeaderPadding: 2rem; // More padding for better spacing
+$welcomePageHeaderTitleMaxWidth: initial;
+$welcomePageHeaderTextAlign: center;
+
+// Yamisskey Button Colors
+$welcomePageButtonBg: linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5); // yamisskey gradient
+$welcomePageButtonHoverBg: linear-gradient(135deg, rgba(179, 45, 182, 0.9), rgba(150, 107, 255, 0.9), rgba(75, 56, 165, 0.9));
+$welcomePageButtonFocusOutline: #966BFF; // yamisskey-primary
+
+$welcomePageHeaderContainerMarginTop: 104px;
+$welcomePageHeaderContainerDisplay: flex;
+$welcomePageHeaderContainerMargin: $welcomePageHeaderContainerMarginTop auto 0;
+
+$welcomePageHeaderTextTitleMarginBottom: 1rem; // Add some spacing
+$welcomePageHeaderTextTitleFontSize: 3rem; // Larger title for impact
+$welcomePageHeaderTextTitleFontWeight: 600; // Semi-bold
+$welcomePageHeaderTextTitleLineHeight: 1.2;
+$welcomePageHeaderTextTitleOpacity: 1;
+
+$welcomePageEnterRoomDisplay: flex;
+$welcomePageEnterRoomWidth: calc(100% - 32px);
+$welcomePageEnterRoomPadding: 8px; // More padding
+$welcomePageEnterRoomMargin: 0 auto;
+
+$welcomePageTabContainerDisplay: flex;
+$welcomePageTabContentDisplay: inherit;
+$welcomePageTabButtonsDisplay: flex;
+$welcomePageTabDisplay: block;
+
+/**
+ * Deep-linking page variables - Yamisskey Theme
+ */
+$deepLinkingMobileLogoHeight: 50px; // Larger logo
+
+$deepLinkingMobileHeaderBackground: rgba(22, 16, 44, 0.85); // yamisskey-panel
+
+$deepLinkingMobileLinkColor: #966BFF; // yamisskey-primary for links
+$deepLinkingMobileTextFontSize: inherit;
+$deepLinkingMobileTextLineHeight: inherit;
+
+$deepLinkingDialInConferenceIdMargin: 10px 0 10px 0;
+$deepLinkingDialInConferenceIdPadding: inherit;
+$deepLinkingDialInConferenceIdBackgroundColor: rgba(134, 113, 235, 0.1); // yamisskey accent with low opacity
+$deepLinkingDialInConferenceIdBorderRadius: 8px; // rounded corners
+
+$deepLinkingDialInConferenceDescriptionFontSize: 0.9em; // Slightly larger
+$deepLinkingDialInConferenceDescriptionLineHeight: inherit;
+$deepLinkingDialInConferenceDescriptionMarginBottom: none;
+
+$deepLinkingDialInConferencePinFontSize: inherit;
+$deepLinkingDialInConferencePinLineHeight: inherit;
+
+$depLinkingMobileHrefLineHeight: 2.2857142857142856em;
+$deepLinkingMobileHrefFontWeight: 600; // Semi-bold
+$deepLinkingMobileHrefFontSize: inherit;
+
+$deepLinkingMobileButtonHeight: 2.5em; // Taller buttons
+$deepLinkingMobileButtonLineHeight: 2.5em;
+$deepLinkingMobileButtonMargin: 20px auto 12px; // More spacing
+$deepLinkingMobileButtonWidth: auto;
+$deepLinkingMobileButtonFontWeight: 600; // Semi-bold
+$deepLinkingMobileButtonFontSize: inherit;
+
+$primaryDeepLinkingMobileButtonBorderRadius: 8px; // Rounded corners
+
+/**
+* Chrome extension banner variables - Yamisskey Theme
+*/
+$chromeExtensionBannerDontShowAgainDisplay: flex;
+$chromeExtensionBannerHeight: 128px;
+$chromeExtensionBannerTop: 80px;
+$chromeExtensionBannerRight: 16px;
+$chromeExtensionBannerTopInMeeting: 10px;
+$chromeExtensionBannerRightInMeeeting: 10px;
+
+/**
+* media type thresholds
+*/
+$verySmallScreen: 500px;
+
+/**
+* Prejoin / premeeting screen - Yamisskey Theme
+*/
+$prejoinDefaultContentWidth: 400px; // Wider for better UX
+
+/**
+ * Additional Yamisskey Theme Variables
+ */
+
+// Core Yamisskey Colors
+$yamisskey-primary: #966BFF;
+$yamisskey-secondary: #B32DB6;
+$yamisskey-tertiary: #4B38A5;
+$yamisskey-background: rgba(19, 14, 38, 0.94);
+$yamisskey-panel: rgba(22, 16, 44, 0.85);
+$yamisskey-nav: rgba(23, 15, 42, 0.92);
+$yamisskey-text: #B4BDD0;
+$yamisskey-text-weak: rgba(180, 189, 208, 0.55);
+$yamisskey-border: rgba(134, 113, 235, 0.25);
+$yamisskey-error: rgba(255, 82, 171, 0.92);
+$yamisskey-warn: rgba(240, 148, 71, 0.92);
+
+// Yamisskey Gradients
+$yamisskey-gradient: linear-gradient(135deg, $yamisskey-secondary, $yamisskey-primary, $yamisskey-tertiary);
+$yamisskey-gradient-soft: linear-gradient(135deg, rgba(179, 45, 182, 0.8), rgba(150, 107, 255, 0.8), rgba(75, 56, 165, 0.8));
