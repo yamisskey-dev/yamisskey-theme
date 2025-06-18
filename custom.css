@@ -33,7 +33,7 @@ html, body {
                 rgba(179, 45, 182, 0.8),
                 rgba(150, 107, 255, 0.8),
                 rgba(75, 56, 165, 0.8)),
-                url('./images/background.jpg') center/cover !important;
+                url('./images/welcome-background.png') center/cover !important;
     background-blend-mode: overlay !important;
     min-height: 100vh !important;
 }
