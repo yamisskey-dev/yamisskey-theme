@@ -27,13 +27,13 @@ yamisskey-theme/
 ### yami.ski用公式テーマ
 
 #### NGO (ライトテーマ)
-- **説明**: やみすきーライトテーマ
+- **説明**: NEEDY GIRL OVERDOSEのWindoseをモチーフにしたレトロポップなライトテーマ
 - **ベース**: light
 - **特徴**: 紫をベースにした明るく優しい配色
 - **ファイル**: [misskey/yami.ski/NGO.json](misskey/yami.ski/NGO.json)
 
 #### DXM (ダークテーマ)
-- **説明**: やみすきーのダークテーマ
+- **説明**: Dextromethorphanをモチーフにした幻想的なダークテーマ
 - **ベース**: dark
 - **特徴**: 紫のアクセントが映える落ち着いたダークテーマ
 - **ファイル**: [misskey/yami.ski/DXM.json](misskey/yami.ski/DXM.json)
@@ -41,16 +41,24 @@ yamisskey-theme/
 ### na.yami.ski用公式テーマ
 
 #### AQUANGEL (ライトテーマ)
-- **説明**: 天使界隈水色系統
+- **説明**: 天使界隈水色系をモチーフにした儚いライトテーマ
 - **ベース**: light
 - **特徴**: 爽やかな水色をベースにした明るいテーマ
 - **ファイル**: [misskey/na.yami.ski/AQUANGEL.json](misskey/na.yami.ski/AQUANGEL.json)
 
 #### LANDMINE (ダークテーマ)
-- **説明**: なやみすきーのダークテーマ
+- **説明**: 地雷系ファッションをモチーフにしたダークテーマ
 - **ベース**: dark
 - **特徴**: ピンク系のアクセントカラーが特徴的なダークテーマ
 - **ファイル**: [misskey/na.yami.ski/LANDMINE.json](misskey/na.yami.ski/LANDMINE.json)
+
+### 個人用テーマ
+
+#### AME (ダークテーマ)
+- **説明**: NEEDY GIRL OVERDOSEのあめちゃんをイメージしたダークテーマ
+- **ベース**: dark
+- **特徴**: 深い紫と赤系のアクセントが特徴的なダークテーマ
+- **ファイル**: [misskey/personal/AME.json](misskey/personal/AME.json)
 
 ## インストール方法
 
