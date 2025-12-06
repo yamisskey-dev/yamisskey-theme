@@ -13,9 +13,6 @@ yamisskey-theme/
 │   ├── na.yami.ski/      # na.yami.ski用の公式テーマ
 │   │   ├── AQUANGEL.json # ライトテーマ
 │   │   └── LANDMINE.json # ダークテーマ
-│   └── personal/         # 個人用テーマ・カスタマイズ
-│       ├── AME.json
-│       └── custom.css
 └── jitsi/                # Jitsi Meet用カスタマイズ
     ├── custom.css
     ├── _variables.scss
@@ -24,23 +21,25 @@ yamisskey-theme/
 
 ## テーマ一覧
 
-### yami.ski用公式テーマ
+### Misskey用テーマ
 
-#### NGO (ライトテーマ)
+#### yami.ski用公式テーマ
+
+##### NGO (ライトテーマ)
 - **説明**: NEEDY GIRL OVERDOSEのWindoseをモチーフにしたレトロポップなライトテーマ
 - **ベース**: light
 - **特徴**: 紫をベースにした明るく優しい配色
 - **ファイル**: [misskey/yami.ski/NGO.json](misskey/yami.ski/NGO.json)
 
-#### DXM (ダークテーマ)
+##### DXM (ダークテーマ)
 - **説明**: Dextromethorphanをモチーフにした幻想的なダークテーマ
 - **ベース**: dark
 - **特徴**: 紫のアクセントが映える落ち着いたダークテーマ
 - **ファイル**: [misskey/yami.ski/DXM.json](misskey/yami.ski/DXM.json)
 
-### na.yami.ski用公式テーマ
+#### na.yami.ski用公式テーマ
 
-#### AQUANGEL (ライトテーマ)
+##### AQUANGEL (ライトテーマ)
 - **説明**: 天使界隈水色系をモチーフにした儚いライトテーマ
 - **ベース**: light
 - **特徴**: 爽やかな水色をベースにした明るいテーマ
@@ -52,36 +51,7 @@ yamisskey-theme/
 - **特徴**: ピンク系のアクセントカラーが特徴的なダークテーマ
 - **ファイル**: [misskey/na.yami.ski/LANDMINE.json](misskey/na.yami.ski/LANDMINE.json)
 
-### 個人用テーマ
-
-#### AME (ダークテーマ)
-- **説明**: NEEDY GIRL OVERDOSEのあめちゃんをイメージしたダークテーマ
-- **ベース**: dark
-- **特徴**: 深い紫と赤系のアクセントが特徴的なダークテーマ
-- **ファイル**: [misskey/personal/AME.json](misskey/personal/AME.json)
-
-## インストール方法
-
-### Misskeyテーマのインストール
-
-1. 使用したいテーマファイル（`.json`）の内容をコピー
-2. Misskeyの設定から「テーマ」を開く
-3. 「テーマをインストール」を選択
-4. コピーした内容をペースト
-
-または、テーマファイルのURLを直接インポートすることもできます。
-
-### カスタマイズについて
-
-#### Misskey用カスタムCSS（個人用）
-[misskey/personal/custom.css](misskey/personal/custom.css) には個人用のカスタマイズが含まれています。
-
-**特徴:**
-- Zen Maru Gothic フォントの適用
-- 公開範囲表示の視認性向上（色分け）
-- 優しく読みやすいUI
-
-#### Jitsi Meet用カスタマイズ
+### Jitsi Meet用テーマ
 Jitsi Meetのカスタマイズファイルは [jitsi/](jitsi/) ディレクトリに含まれています。
 
 **含まれるファイル:**
@@ -94,6 +64,17 @@ Jitsi Meetのカスタマイズファイルは [jitsi/](jitsi/) ディレクト�
 - 統一されたブランドカラー（紫系）
 - モダンで洗練されたUI
 - レスポンシブ対応
+
+## インストール方法
+
+### Misskeyテーマのインストール
+
+1. 使用したいテーマファイル（`.json`）の内容をコピー
+2. Misskeyの設定から「テーマ」を開く
+3. 「テーマをインストール」を選択
+4. コピーした内容をペースト
+
+または、テーマファイルのURLを直接インポートすることもできます。
 
 ## 著者
 
