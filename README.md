@@ -1,19 +1,15 @@
 # Yamisskey Theme Collection
 
-[yami.ski](https://yami.ski) と [na.yami.ski](https://na.yami.ski) 向けの公式カラーテーマコレクションです。
+[yami.ski](https://yami.ski) 向けの公式カラーテーマコレクションです。
 
 ## ディレクトリ構造
 
 ```
 yamisskey-theme/
 ├── misskey/
-│   ├── yami.ski/         # yami.ski用の公式テーマ
-│   │   ├── NGO.json      # ライトテーマ
-│   │   └── DXM.json      # ダークテーマ
-│   ├── na.yami.ski/      # na.yami.ski用の公式テーマ
-│   │   ├── AQUANGEL.json # ライトテーマ
-│   │   └── LANDMINE.json # ダークテーマ
-└── jitsi/                # Jitsi Meet用カスタマイズ
+│   ├── NGO.json      # ライトテーマ
+│   └── DXM.json      # ダークテーマ
+└── jitsi/            # Jitsi Meet用カスタマイズ
     ├── custom.css
     ├── _variables.scss
     └── jitsi-custom-head.html
@@ -23,33 +19,17 @@ yamisskey-theme/
 
 ### Misskey用テーマ
 
-#### yami.ski用公式テーマ
-
-##### NGO (ライトテーマ)
+#### NGO (ライトテーマ)
 - **説明**: NEEDY GIRL OVERDOSEのWindoseをモチーフにしたレトロポップなライトテーマ
 - **ベース**: light
 - **特徴**: 紫をベースにした明るく優しい配色
-- **ファイル**: [misskey/yami.ski/NGO.json](misskey/yami.ski/NGO.json)
+- **ファイル**: [misskey/NGO.json](misskey/NGO.json)
 
-##### DXM (ダークテーマ)
+#### DXM (ダークテーマ)
 - **説明**: Dextromethorphanをモチーフにした幻想的なダークテーマ
 - **ベース**: dark
 - **特徴**: 紫のアクセントが映える落ち着いたダークテーマ
-- **ファイル**: [misskey/yami.ski/DXM.json](misskey/yami.ski/DXM.json)
-
-#### na.yami.ski用公式テーマ
-
-##### AQUANGEL (ライトテーマ)
-- **説明**: 天使界隈水色系をモチーフにした儚いライトテーマ
-- **ベース**: light
-- **特徴**: 爽やかな水色をベースにした明るいテーマ
-- **ファイル**: [misskey/na.yami.ski/AQUANGEL.json](misskey/na.yami.ski/AQUANGEL.json)
-
-#### LANDMINE (ダークテーマ)
-- **説明**: 地雷系ファッションをモチーフにしたダークテーマ
-- **ベース**: dark
-- **特徴**: ピンク系のアクセントカラーが特徴的なダークテーマ
-- **ファイル**: [misskey/na.yami.ski/LANDMINE.json](misskey/na.yami.ski/LANDMINE.json)
+- **ファイル**: [misskey/DXM.json](misskey/DXM.json)
 
 ### Jitsi Meet用テーマ
 Jitsi Meetのカスタマイズファイルは [jitsi/](jitsi/) ディレクトリに含まれています。
