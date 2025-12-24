@@ -9,10 +9,16 @@ yamisskey-theme/
 ├── misskey/
 │   ├── NGO.json      # ライトテーマ
 │   └── DXM.json      # ダークテーマ
-└── jitsi/            # Jitsi Meet用カスタマイズ
-    ├── custom.css
-    ├── _variables.scss
-    └── jitsi-custom-head.html
+├── jitsi/            # Jitsi Meet用カスタマイズ
+│   ├── custom.css
+│   ├── _variables.scss
+│   └── jitsi-custom-head.html
+├── uptime-kuma/      # Uptime Kuma用カスタマイズ
+│   └── custom.css
+└── ctfd/             # CTFd用カスタマイズ
+    ├── theme-header.html
+    ├── theme-footer.html
+    └── theme-settings.json
 ```
 
 ## テーマ一覧
@@ -45,6 +51,33 @@ Jitsi Meetのカスタマイズファイルは [jitsi/](jitsi/) ディレクト�
 - モダンで洗練されたUI
 - レスポンシブ対応
 
+### Uptime Kuma用テーマ
+Uptime Kumaのカスタマイズファイルは [uptime-kuma/](uptime-kuma/) ディレクトリに含まれています。
+
+**含まれるファイル:**
+- `custom.css` - カスタムスタイルシート
+
+**特徴:**
+- Yamisskey/Jitsiテーマと統一された紫系グラデーション
+- ダークテーマベースのモダンなUI
+- ステータスバッジ・モニターリストのカスタマイズ
+- ボタン・フォーム・モーダルの統一スタイル
+- Misskey DXMテーマの色を忠実に再現
+
+### CTFd用テーマ
+CTFdのカスタマイズファイルは [ctfd/](ctfd/) ディレクトリに含まれています。
+
+**含まれるファイル:**
+- `theme-header.html` - Theme Header用コード
+- `theme-footer.html` - Theme Footer用コード
+- `theme-settings.json` - Theme Settings用設定
+
+**特徴:**
+- Misskey DXMテーマベースのダークテーマ
+- チャレンジカード・スコアボードのカスタマイズ
+- グラデーションボタン
+- 統一されたブランドカラー（紫系）
+
 ## インストール方法
 
 ### Misskeyテーマのインストール
@@ -55,6 +88,22 @@ Jitsi Meetのカスタマイズファイルは [jitsi/](jitsi/) ディレクト�
 4. コピーした内容をペースト
 
 または、テーマファイルのURLを直接インポートすることもできます。
+
+### Uptime Kumaテーマのインストール
+
+1. Uptime Kumaの設定を開く
+2. 「外観」→「カスタムCSS」を選択
+3. `uptime-kuma/custom.css`の内容をペースト
+4. 保存して適用
+
+### CTFdテーマのインストール
+
+1. CTFd管理画面の「Configuration」→「Appearance」を開く
+2. 「Primary Color」を`#966BFF`に設定
+3. 「Theme Header」に`ctfd/theme-header.html`の内容をペースト
+4. 「Theme Footer」に`ctfd/theme-footer.html`の内容をペースト
+5. 「Theme Settings」に`ctfd/theme-settings.json`の内容をペースト
+6. 「Build CSS」をクリックして適用
 
 ## 著者
 

@@ -1,0 +1,488 @@
+/*
+ * Yamisskey Theme - Uptime Kuma Custom CSS
+ * Based on Misskey DXM Theme (faithful reproduction)
+ */
+
+:root {
+    /* DXM Theme Colors - Exact values */
+    --mk-bg: #131026;
+    --mk-fg: #C2CBE0;
+    --mk-panel: rgba(16, 11, 34, 0.86);
+    --mk-popup: rgba(16, 11, 34, 0.95);
+    --mk-navBg: rgba(23, 15, 42, 0.92);
+    --mk-accent: #A374FF;
+    --mk-mention: #D655D6;
+    --mk-divider: rgba(163, 116, 255, 0.25);
+    --mk-buttonBg: rgba(163, 116, 255, 0.2);
+    --mk-buttonHoverBg: rgba(163, 116, 255, 0.3);
+    --mk-accentedBg: rgba(163, 116, 255, 0.15);
+    --mk-inputBorder: rgba(163, 116, 255, 0.25);
+    --mk-inputBorderHover: rgba(163, 116, 255, 0.3);
+    --mk-panelHeaderBg: rgba(185, 54, 185, 0.7);
+    --mk-panelHeaderDivider: rgba(185, 54, 185, 0.2);
+    --mk-windowHeader: rgba(185, 54, 185, 0.7);
+    --mk-listItemHoverBg: rgba(255, 255, 255, 0.09);
+    --mk-scrollbarHandle: rgba(59, 130, 246, 0.4);
+    --mk-scrollbarHandleHover: rgba(59, 130, 246, 0.6);
+    --mk-shadow: rgba(0, 0, 0, 0.5);
+    --mk-modalBg: rgba(12, 9, 26, 0.94);
+    --mk-fgTransparent: rgba(194, 203, 224, 0.88);
+    --mk-fgTransparentWeak: rgba(194, 203, 224, 0.55);
+
+    /* DXM Gradients */
+    --mk-buttonGradateA: #B32DB6;
+    --mk-buttonGradateB: #966BFF;
+    --mk-buttonGradateC: #4B38A5;
+    --mk-buttonGradient: linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5);
+
+    /* DXM Status Colors */
+    --mk-success: rgba(121, 255, 194, 0.94);
+    --mk-warn: rgba(255, 175, 99, 0.96);
+    --mk-error: rgba(255, 102, 194, 0.96);
+
+    /* DXM Code Colors */
+    --mk-codeNumber: #A374FF;
+    --mk-codeString: #FFAB4A;
+    --mk-codeBoolean: #D655D6;
+}
+
+/* === BODY === */
+body {
+    background: var(--mk-bg) !important;
+    color: var(--mk-fg) !important;
+}
+
+/* === NAVBAR === */
+.navbar,
+header {
+    background: var(--mk-navBg) !important;
+    border-bottom: 1px solid var(--mk-divider) !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--mk-fg) !important;
+}
+
+.nav-link:hover {
+    color: var(--mk-accent) !important;
+}
+
+/* === SIDEBAR === */
+.sidebar,
+aside {
+    background: var(--mk-panel) !important;
+    border-right: 1px solid var(--mk-divider) !important;
+}
+
+.sidebar .nav-link {
+    color: var(--mk-fg) !important;
+}
+
+.sidebar .nav-link:hover {
+    background: var(--mk-listItemHoverBg) !important;
+}
+
+.sidebar .nav-link.active {
+    background: var(--mk-accentedBg) !important;
+    color: var(--mk-accent) !important;
+}
+
+/* === CARDS / PANELS === */
+.card {
+    background: var(--mk-panel) !important;
+    border: 1px solid var(--mk-divider) !important;
+    box-shadow: 0 2px 8px var(--mk-shadow) !important;
+}
+
+.card-header {
+    background: var(--mk-panelHeaderBg) !important;
+    border-bottom: 1px solid var(--mk-panelHeaderDivider) !important;
+    color: var(--mk-fg) !important;
+}
+
+/* === BUTTONS === */
+.btn-primary {
+    background: var(--mk-buttonGradient) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+}
+
+.btn-primary:hover {
+    opacity: 0.85 !important;
+}
+
+.btn-secondary {
+    background: var(--mk-buttonBg) !important;
+    border: 1px solid var(--mk-divider) !important;
+    color: var(--mk-fg) !important;
+}
+
+.btn-secondary:hover {
+    background: var(--mk-buttonHoverBg) !important;
+}
+
+.btn-outline-primary {
+    border: 1px solid var(--mk-accent) !important;
+    color: var(--mk-accent) !important;
+    background: transparent !important;
+}
+
+.btn-outline-primary:hover {
+    background: var(--mk-accentedBg) !important;
+}
+
+.btn-danger {
+    background: var(--mk-error) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+}
+
+.btn-warning {
+    background: var(--mk-warn) !important;
+    border: none !important;
+    color: #1A0F00 !important;
+}
+
+.btn-success {
+    background: var(--mk-success) !important;
+    border: none !important;
+    color: #0A1F15 !important;
+}
+
+/* === FORMS === */
+.form-control,
+.form-select,
+input,
+textarea,
+select {
+    background: var(--mk-panel) !important;
+    border: 1px solid var(--mk-inputBorder) !important;
+    color: var(--mk-fg) !important;
+}
+
+.form-control:hover,
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: var(--mk-inputBorderHover) !important;
+}
+
+.form-control:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--mk-accent) !important;
+    box-shadow: 0 0 0 2px var(--mk-accentedBg) !important;
+    outline: none !important;
+}
+
+.form-control::placeholder,
+input::placeholder {
+    color: var(--mk-fgTransparentWeak) !important;
+}
+
+.form-label,
+label {
+    color: var(--mk-fg) !important;
+}
+
+/* === SWITCHES === */
+.form-check-input {
+    background-color: var(--mk-buttonBg) !important;
+    border-color: var(--mk-divider) !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--mk-accent) !important;
+    border-color: var(--mk-accent) !important;
+}
+
+/* === BADGES === */
+.badge.bg-success,
+.status-up {
+    background: var(--mk-success) !important;
+    color: #0A1F15 !important;
+}
+
+.badge.bg-danger,
+.status-down {
+    background: var(--mk-error) !important;
+    color: #FFFFFF !important;
+}
+
+.badge.bg-warning,
+.status-pending {
+    background: var(--mk-warn) !important;
+    color: #1A0F00 !important;
+}
+
+.badge.bg-secondary {
+    background: var(--mk-buttonBg) !important;
+    color: var(--mk-fg) !important;
+}
+
+.badge.bg-primary {
+    background: var(--mk-accentedBg) !important;
+    color: var(--mk-accent) !important;
+}
+
+/* === UPTIME BAR === */
+.uptime-bar,
+.beat-bar {
+    background: var(--mk-navBg) !important;
+}
+
+.uptime-bar .up,
+.beat.up {
+    background: var(--mk-success) !important;
+}
+
+.uptime-bar .down,
+.beat.down {
+    background: var(--mk-error) !important;
+}
+
+.uptime-bar .pending,
+.beat.pending {
+    background: var(--mk-warn) !important;
+}
+
+/* === MODALS === */
+.modal-content {
+    background: var(--mk-popup) !important;
+    border: 1px solid var(--mk-divider) !important;
+    box-shadow: 0 4px 16px var(--mk-shadow) !important;
+}
+
+.modal-header {
+    background: var(--mk-panelHeaderBg) !important;
+    border-bottom: 1px solid var(--mk-panelHeaderDivider) !important;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) !important;
+}
+
+.modal-footer {
+    border-top: 1px solid var(--mk-divider) !important;
+}
+
+.modal-backdrop {
+    background: var(--mk-modalBg) !important;
+}
+
+/* === DROPDOWNS === */
+.dropdown-menu {
+    background: var(--mk-popup) !important;
+    border: 1px solid var(--mk-divider) !important;
+    box-shadow: 0 4px 16px var(--mk-shadow) !important;
+}
+
+.dropdown-item {
+    color: var(--mk-fg) !important;
+}
+
+.dropdown-item:hover {
+    background: var(--mk-listItemHoverBg) !important;
+}
+
+.dropdown-item.active {
+    background: var(--mk-accentedBg) !important;
+    color: var(--mk-accent) !important;
+}
+
+/* === TABLES === */
+.table {
+    color: var(--mk-fg) !important;
+}
+
+.table > thead {
+    background: var(--mk-accentedBg) !important;
+}
+
+.table > thead th {
+    border-bottom: 1px solid var(--mk-divider) !important;
+}
+
+.table > tbody > tr {
+    border-bottom: 1px solid var(--mk-divider) !important;
+}
+
+.table > tbody > tr:hover {
+    background: var(--mk-listItemHoverBg) !important;
+}
+
+/* === ALERTS === */
+.alert-success {
+    background: rgba(121, 255, 194, 0.15) !important;
+    color: #79FFC2 !important;
+    border: none !important;
+    border-left: 3px solid var(--mk-success) !important;
+}
+
+.alert-danger {
+    background: rgba(255, 102, 194, 0.15) !important;
+    color: #FF66C2 !important;
+    border: none !important;
+    border-left: 3px solid var(--mk-error) !important;
+}
+
+.alert-warning {
+    background: rgba(255, 175, 99, 0.15) !important;
+    color: #FFAF63 !important;
+    border: none !important;
+    border-left: 3px solid var(--mk-warn) !important;
+}
+
+.alert-info {
+    background: var(--mk-accentedBg) !important;
+    color: var(--mk-accent) !important;
+    border: none !important;
+    border-left: 3px solid var(--mk-accent) !important;
+}
+
+/* === TABS === */
+.nav-tabs {
+    border-bottom: 1px solid var(--mk-divider) !important;
+}
+
+.nav-tabs .nav-link {
+    color: var(--mk-fg) !important;
+    border: none !important;
+}
+
+.nav-tabs .nav-link:hover {
+    background: var(--mk-listItemHoverBg) !important;
+}
+
+.nav-tabs .nav-link.active {
+    background: var(--mk-accentedBg) !important;
+    color: var(--mk-accent) !important;
+    border: none !important;
+}
+
+/* === PILLS === */
+.nav-pills .nav-link {
+    color: var(--mk-fg) !important;
+}
+
+.nav-pills .nav-link:hover {
+    background: var(--mk-listItemHoverBg) !important;
+}
+
+.nav-pills .nav-link.active {
+    background: var(--mk-accentedBg) !important;
+    color: var(--mk-accent) !important;
+}
+
+/* === TOOLTIPS === */
+.tooltip .tooltip-inner {
+    background: var(--mk-popup) !important;
+    border: 1px solid var(--mk-divider) !important;
+    color: var(--mk-fg) !important;
+}
+
+/* === PAGINATION === */
+.pagination .page-link {
+    background: var(--mk-panel) !important;
+    border: 1px solid var(--mk-divider) !important;
+    color: var(--mk-fg) !important;
+}
+
+.pagination .page-link:hover {
+    background: var(--mk-listItemHoverBg) !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: var(--mk-accentedBg) !important;
+    border-color: var(--mk-accent) !important;
+    color: var(--mk-accent) !important;
+}
+
+/* === PROGRESS BARS === */
+.progress {
+    background: var(--mk-navBg) !important;
+}
+
+.progress-bar {
+    background: var(--mk-buttonGradient) !important;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--mk-panel) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mk-scrollbarHandle) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--mk-scrollbarHandleHover) !important;
+}
+
+/* === MONITOR LIST === */
+.monitor-list-item,
+.item {
+    background: var(--mk-panel) !important;
+    border: 1px solid var(--mk-divider) !important;
+}
+
+.monitor-list-item:hover,
+.item:hover {
+    background: var(--mk-listItemHoverBg) !important;
+}
+
+.monitor-list-item.active,
+.item.active {
+    border-left: 3px solid var(--mk-accent) !important;
+    background: var(--mk-accentedBg) !important;
+}
+
+/* === STATUS PAGE === */
+.status-page {
+    background: var(--mk-bg) !important;
+}
+
+/* === SPINNER === */
+.spinner-border {
+    border-color: var(--mk-accent) !important;
+    border-right-color: transparent !important;
+}
+
+/* === FOOTER === */
+footer {
+    background: var(--mk-navBg) !important;
+    border-top: 1px solid var(--mk-divider) !important;
+    color: var(--mk-fg) !important;
+}
+
+footer a {
+    color: var(--mk-accent) !important;
+}
+
+/* === LINKS === */
+a {
+    color: var(--mk-accent) !important;
+}
+
+a:hover {
+    color: var(--mk-mention) !important;
+}
+
+/* === CODE === */
+code {
+    color: var(--mk-codeString) !important;
+    background: var(--mk-accentedBg) !important;
+}
+
+pre {
+    background: var(--mk-panel) !important;
+    border: 1px solid var(--mk-divider) !important;
+}
