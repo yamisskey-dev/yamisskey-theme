@@ -9,10 +9,6 @@ yamisskey-theme/
 ├── misskey/
 │   ├── NGO.json      # ライトテーマ
 │   └── DXM.json      # ダークテーマ
-├── jitsi/            # Jitsi Meet用カスタマイズ
-│   ├── custom.css
-│   ├── _variables.scss
-│   └── jitsi-custom-head.html
 ├── uptime-kuma/      # Uptime Kuma用カスタマイズ
 │   └── custom.css
 └── ctfd/             # CTFd用カスタマイズ
@@ -36,20 +32,6 @@ yamisskey-theme/
 - **ベース**: dark
 - **特徴**: 紫のアクセントが映える落ち着いたダークテーマ
 - **ファイル**: [misskey/DXM.json](misskey/DXM.json)
-
-### Jitsi Meet用テーマ
-Jitsi Meetのカスタマイズファイルは [jitsi/](jitsi/) ディレクトリに含まれています。
-
-**含まれるファイル:**
-- `custom.css` - カスタムスタイルシート
-- `_variables.scss` - SCSS変数定義
-- `jitsi-custom-head.html` - カスタムヘッダー
-
-**特徴:**
-- Yamisskey風のグラデーションボタン
-- 統一されたブランドカラー（紫系）
-- モダンで洗練されたUI
-- レスポンシブ対応
 
 ### Uptime Kuma用テーマ
 Uptime Kumaのカスタマイズファイルは [uptime-kuma/](uptime-kuma/) ディレクトリに含まれています。
