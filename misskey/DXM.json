@@ -86,7 +86,7 @@
 		"scrollbarHandle": "rgba(59, 130, 246, 0.4)",
 		"inputBorderHover": "rgba(163, 116, 255, 0.3)",
 		"wallpaperOverlay": "rgba(0, 0, 0, 0.42)",
-		"fgTransparentWeak": ":alpha<0.55<@fg",
+		"fgTransparentWeak": ":alpha<0.65<@fg",
 		"panelHeaderDivider": "rgba(185, 54, 185, 0.2)",
 		"scrollbarHandleHover": "rgba(59, 130, 246, 0.6)",
 		"bgGradient": "linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5)",
