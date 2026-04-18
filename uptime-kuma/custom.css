@@ -135,7 +135,7 @@ aside {
 .btn-danger {
     background: var(--mk-error) !important;
     border: none !important;
-    color: #FFFFFF !important;
+    color: #2B0814 !important;
 }
 
 .btn-warning {
@@ -208,7 +208,7 @@ label {
 .badge.bg-danger,
 .status-down {
     background: var(--mk-error) !important;
-    color: #FFFFFF !important;
+    color: #2B0814 !important;
 }
 
 .badge.bg-warning,
