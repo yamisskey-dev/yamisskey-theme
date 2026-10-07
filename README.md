@@ -33,6 +33,19 @@ yamisskey-theme/
 - **特徴**: 紫のアクセントが映える落ち着いたダークテーマ
 - **ファイル**: [misskey/DXM.json](misskey/DXM.json)
 
+#### ブランドカラー（グラデーション）
+
+Uptime Kuma / CTFd など Misskey 外のテーマが参照している palette です。
+Misskey 本体の `compile()` はベーステーマに無いプロパティを捨てるため、
+テーマ JSON には含めず、ここに記録しています。
+
+| 用途 | DXM | NGO |
+|------|-----|-----|
+| ボタン / ヘッダ | `linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5)` | `linear-gradient(172deg, #FF9DFF, #A398FF 45%, #7D66FF)` |
+| ナビゲーション | `linear-gradient(135deg, #4B28B5, #3B59C9, #2B8AC9)` | `linear-gradient(98deg, #E5B8FF, #DB9DFF 40%, #D192FF)` |
+| 背景 | `linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5)` | `linear-gradient(145deg, #FFF2FF, #F5F2FF)` |
+| 入力欄 | `linear-gradient(135deg, #2D2D2D, #242424)` | `linear-gradient(135deg, #FFF2FF, #F8F5FF)` |
+
 ### Uptime Kuma用テーマ
 Uptime Kumaのカスタマイズファイルは [uptime-kuma/](uptime-kuma/) ディレクトリに含まれています。
 
