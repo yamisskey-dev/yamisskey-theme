@@ -23,6 +23,7 @@
 		"X16": ":alpha<0.65<@panel",
 		"X17": ":alpha<0.65<@bg",
 		"link": "#A374FF",
+		"love": "#FF6B9D",
 		"warn": "rgba(255, 175, 99, 0.96)",
 		"badge": "#D655D6",
 		"error": "rgba(255, 102, 194, 0.96)",
@@ -75,6 +76,7 @@
 		"driveFolderBg": ":alpha<0.2<@accent",
 		"fgHighlighted": ":lighten<3<@fg",
 		"fgTransparent": "rgba(194, 203, 224, 0.88)",
+		"folderHeaderBg": "rgba(163, 116, 255, 0.08)",
 		"panelHeaderBg": "rgba(185, 54, 185, 0.7)",
 		"panelHeaderFg": "@fg",
 		"buttonGradateA": "#B32DB6",
@@ -88,12 +90,16 @@
 		"wallpaperOverlay": "rgba(0, 0, 0, 0.42)",
 		"fgTransparentWeak": ":alpha<0.65<@fg",
 		"panelHeaderDivider": "rgba(185, 54, 185, 0.2)",
+		"folderHeaderHoverBg": "rgba(163, 116, 255, 0.14)",
 		"scrollbarHandleHover": "rgba(59, 130, 246, 0.6)",
 		"bgGradient": "linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5)",
 		"buttonBgGradient": "linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5)",
 		"inputBgGradient": "linear-gradient(135deg, #2D2D2D, #242424)",
 		"navGradient": "linear-gradient(135deg, #4B28B5, #3B59C9, #2B8AC9)",
 		"headerGradient": "linear-gradient(135deg, #B32DB6, #966BFF, #4B38A5)"
+	},
+	"codeHighlighter": {
+		"base": "catppuccin-mocha"
 	},
 	"author": "@hitalin@yami.ski"
 }
