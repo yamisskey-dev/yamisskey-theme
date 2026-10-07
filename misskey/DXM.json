@@ -46,7 +46,7 @@
 		"codeBoolean": "#D655D6",
 		"dateLabelFg": "@fg",
 		"inputBorder": "rgba(163, 116, 255, 0.25)",
-		"panelBorder": "1px solid rgba(163, 116, 255, 0.25)",
+		"panelBorder": "\" solid 1px rgba(163, 116, 255, 0.25)",
 		"switchOffBg": "rgba(163, 116, 255, 0.2)",
 		"switchOffFg": ":alpha<0.65<@fg",
 		"navIndicator": "@indicator",
